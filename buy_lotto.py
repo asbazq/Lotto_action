@@ -2,8 +2,8 @@ from playwright.sync_api import Playwright, sync_playwright
 import time
 
 # 동행복권 아이디와 패스워드를 설정
-USER_ID = ${{ secrets.LOTTO_ID }}
-USER_PW = ${{ secrets.LOTTO_PASSWORD }}
+USER_ID = os.environ['LOTTO_ID']
+USER_PW = os.environ['LOTTO_PASSWORD' ]
 # 구매 개수를 설정
 COUNT = 1
 
